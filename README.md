@@ -8,6 +8,8 @@ To find out more about BaseKit, please visit [basekit.com](http://basekit.com). 
 
 We provide our partners with the use of simple sign-up and login widgets that can be used on any website. These can be deployed in minutes, so you can offer the BaseKit website builder to your users with minimal effort.
 
+There is a basic demo of the widgets available at [partners.basekit.com/widget-test.htm](http://partners.basekit.com/widget-test.htm). Please note that there is no styling on this page yet, this is coming soon.
+
 ### Sign Up Widget
 
 This is a widget that will create a BaseKit user and website. The user that is created will be assigned to your partner account.
