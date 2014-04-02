@@ -10,13 +10,23 @@ We provide our partners with the use of simple sign-up and login widgets that ca
 
 ### Sign Up Widget
 
-This is a widget that will create a BaseKit user and website. The user that is created will be assigned to your partner account. You will be paid comission for any users on your account who go on to subscribe to a premium BaseKit package.
+This is a widget that will create a BaseKit user and website. The user that is created will be assigned to your partner account.
+
+You will be paid comission for any users on your account who go on to subscribe to a premium BaseKit package.
 
 ### Login Widget
 
 This widget allows an existing user to login to BaseKit.
 
 Note that this will only allow users assigned to your partner account to login.
+
+## Sample Code
+
+Please find a sample HTML file in this repository that can be used to test both widgets.
+
+[Sample HTML](sample.htm)
+
+The only change that you need to make is to replace the partnerRef parameter with your partner reference. If you're not sure how to find this, please contact [partners@basekit.com](mailto:partners@basekit.com) and we will be able to provide you with this.
 
 ## Using The Widgets
 
@@ -44,7 +54,7 @@ The widgets need to be given a container element into which they will be rendere
 <div id="login"></div>
 ```
 
-You can then use the jQuery plugins **signupWidget** and **loginWidget** to instantiaite the widgets. You will need to pass in your partner reference. If you're not sure how to find this, please contact [partners@basekit.com](mailto:partners@basekit.com) and they will be able to provide you with this.
+You can then use the jQuery plugins **signupWidget** and **loginWidget** to instantiaite the widgets. You will need to pass in your partner reference. If you're not sure how to find this, please contact [partners@basekit.com](mailto:partners@basekit.com) and we will be able to provide you with this.
 
 ```javascript
 $("#signup").signupWidget({
