@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>BaseKit Partner Widgets</title>
+        <meta name="description" content="{{ page.meta.description }}">
+        <meta name="viewport" content="width=device-width">
+        <link rel="stylesheet" href="http://partners.basekit.com/embed.css">
+    </head>
+    <body>
+
+        <!--[if lt IE 7]>
+            <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+        <![endif]-->
+
+        <h1>BaseKit Partner Widgets</h1>
+        <p>Don't forget to change the partnerRef parameter to your partner reference. If you're not sure how to find this, please contact <a href="mailto:partners@basekit.com">partners@basekit.com</a> and we will be able to provide you with this.</p>
+
+        <h2>Sign-Up Widget</h2>
+        <div id="signup"></div>
+
+        <h2>Login Widget</h2>
+        <div id="login"></div>
+
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+        <script src="http://partners.basekit.com/embed.js"></script>
+
+        <script>
+
+            $(function() {
+                $("#signup").signupWidget({
+                    partnerRef: 691
+                });
+
+                $("#login").loginWidget({
+                    partnerRef: 691
+                });
+            });
+
+        </script>
+
+    </body>
+</html>
