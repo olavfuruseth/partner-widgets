@@ -61,12 +61,18 @@ You can then use the jQuery plugins **signupWidget** and **loginWidget** to inst
 ```javascript
 $("#signup").signupWidget({
     partnerRef: 123
+}).on('success', function (event, firstName, lastName, email) {
+    // your code goes here
 });
 
 $("#login").loginWidget({
     partnerRef: 123
+}).on('success', function (event, userName) {
+    // your code goes here
 });
 ```
+
+When either of the requests are successful the widget will trigger a **success** event notification with very basic details about the user signup or login details. This is ideal for hooking up with analytics. You would add your intergration code in the callback function.
 
 ## Styling The Widgets
 

@@ -34,10 +34,15 @@
             $(function() {
                 $("#signup").signupWidget({
                     partnerRef: 691
+                }).on('success', function (event, firstName, lastName, email) {
+                    // your code goes here
                 });
+ 
 
                 $("#login").loginWidget({
                     partnerRef: 691
+                }).on('success', function (event, userName) {
+                    // your code goes here
                 });
             });
 
