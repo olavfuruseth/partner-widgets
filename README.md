@@ -58,21 +58,25 @@ The widgets need to be given a container element into which they will be rendere
 
 You can then use the jQuery plugins **signupWidget** and **loginWidget** to instantiaite the widgets. You will need to pass in your partner reference. If you're not sure how to find this, please contact [partners@basekit.com](mailto:partners@basekit.com) and we will be able to provide you with this.
 
+Both the widgets impliment an option called **followRedirectUrl**, by default the plugin will redirect to the destination url once the specific action is has finiahed. But if you set the **followRedirectUrl** plugin option to false then you will have to do the redirect yourself.
+
 ```javascript
 $("#signup").signupWidget({
-    partnerRef: 123
-}).on('success', function (event, firstName, lastName, email) {
-    // your code goes here
+    partnerRef: 123,
+    followRedirectUrl: false
+}).on('success', function (event, firstName, lastName, email, redirectUrl) {
+    // your code goes here and you will impliment the redirect URL code as below
+    location.href = redirectUrl;
 });
 
 $("#login").loginWidget({
-    partnerRef: 123
-}).on('success', function (event, userName) {
+    partnerRef: 123,
+}).on('success', function (event, userName, redirectUrl) {
     // your code goes here
 });
 ```
 
-When either of the requests are successful the widget will trigger a **success** event notification with very basic details about the user signup or login details. This is ideal for hooking up with analytics. You would add your intergration code in the callback function.
+When either of the requests are successful the widget will trigger a **success** event notification with very basic details about the user signup or login details and also the final destination redirect url. This is ideal for hooking up with analytics. You would add your intergration code in the callback function and if you have set **followRedirectUrl** to false, you would then redirect to the destination url.
 
 ## Styling The Widgets
 
