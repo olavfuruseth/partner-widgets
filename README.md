@@ -76,7 +76,9 @@ $("#login").loginWidget({
 });
 ```
 
-When either of the requests are successful the widget will trigger a **success** event notification with very basic details about the user signup or login details and also the final destination redirect url. This is ideal for hooking up with analytics. You would add your intergration code in the callback function and if you have set **followRedirectUrl** to false, you would then redirect to the destination url.
+When either of the requests are successful the widget will trigger a **success** event notification with very basic details about the user signup or login details and also the final destination redirect url. This is ideal for hooking up with analytics, you would add your intergration code in the callback function. 
+
+If you have set **followRedirectUrl** to false, you would then redirect to the destination url yourself liek in the signupWidget example above.
 
 ## Styling The Widgets
 
