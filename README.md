@@ -76,16 +76,28 @@ $("#login").loginWidget({
 });
 ```
 
-When either of the requests are successful the widget will trigger a **success** event notification with very basic details about the user signup or login details and also the final destination redirect url. This is ideal for hooking up with analytics, you would add your intergration code in the callback function. 
+When either of the requests are successful the widget will trigger a **success** event notification with very basic details about the user signup or login details and also the final destination redirect url. This is ideal for hooking up with analytics, you would add your intergration code in the callback function.
 
 If you have set **followRedirectUrl** to false, you would then redirect to the destination url yourself liek in the signupWidget example above.
 
 ## Styling The Widgets
 
-We provide a stylesheet that can be used to give the widgets some basic layout and styling. If you're happy with the basic styles then please use this in your own projects directly. The following line of code can be used to do so, and should be placed somewhere in your HTML head.
+We provide three stylesheets that can be used to give the widgets some basic layout and styling. If you're happy with the basic styles then please use this in your own projects directly. One of the followings lines of code can be used to add basic styling to the widget, and should be placed somewhere in your HTML head.
 
 ```html
 <link rel="stylesheet" href="http://partners.basekit.com/embed.css">
+```
+
+```html
+<link rel="stylesheet" href="http://partners.basekit.com/embed-regular.css">
+```
+
+```html
+<link rel="stylesheet" href="http://partners.basekit.com/embed-simple.css">
+```
+
+```html
+<link rel="stylesheet" href="http://partners.basekit.com/embed-oversized.css">
 ```
 
 If you want to customise the widgets to match the other elements on your website, we suggest that you download the above CSS file and use it as a starting point.
